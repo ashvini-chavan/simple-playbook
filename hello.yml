@@ -1,0 +1,8 @@
+---
+- name: This is my test playbook
+  hosts: localhost
+  gather_facts: false
+  tasks:
+  - name: Print the username
+    debug:
+      msg: "Hello, {{ user_name }}"
